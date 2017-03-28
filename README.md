@@ -1,7 +1,7 @@
 Prettier Markdown
 =================
 
-[![](https://img.shields.io/travis/noyobo/perttier-markdown.svg)](https://travis-ci.org/noyobo/perttier-markdown) [![Codecov](https://img.shields.io/codecov/c/github/noyobo/perttier-markdown/master.svg)](https://codecov.io/gh/noyobo/perttier-markdown/branch/master) [![npm package](https://img.shields.io/npm/v/perttier-markdown.svg)](https://www.npmjs.org/package/perttier-markdown) [![NPM downloads](http://img.shields.io/npm/dm/perttier-markdown.svg)](https://npmjs.org/package/perttier-markdown)
+[![](https://img.shields.io/travis/noyobo/prettier-markdown.svg)](https://travis-ci.org/noyobo/prettier-markdown) [![Codecov](https://img.shields.io/codecov/c/github/noyobo/prettier-markdown/master.svg)](https://codecov.io/gh/noyobo/prettier-markdown/branch/master) [![npm package](https://img.shields.io/npm/v/prettier-markdown.svg)](https://www.npmjs.org/package/prettier-markdown) [![NPM downloads](http://img.shields.io/npm/dm/prettier-markdown.svg)](https://npmjs.org/package/prettier-markdown)
 
 Prettier JavaScript code in markdown.
 
