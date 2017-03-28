@@ -1,0 +1,35 @@
+{
+  "name": "prettier-markdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/prettier-markdown.js",
+  "bin": {
+    "prettier-markdown": "./bin/cli.js",
+    "pmd": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov"
+  },
+  "keywords": [
+    "prettier",
+    "markdown",
+    "formater"
+  ],
+  "author": "noyobo <noyobo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.6.3",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "output-file": "^1.1.1",
+    "prettier": "^0.22.0",
+    "ramda": "^0.23.0"
+  },
+  "devDependencies": {
+    "codecov": "^2.1.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
+    "rimraf": "^2.6.1"
+  }
+}
