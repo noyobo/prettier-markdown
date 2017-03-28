@@ -1,6 +1,6 @@
-console.log(1)
+# prettier markdown
 
-````jsx
+```jsx
 import React, { Component, PropTypes } from "react";
 
 export default class App extends Component {
@@ -15,10 +15,10 @@ export default class App extends Component {
   }
 
   render() {
-    return <div />;
+    return <div>prettier markdown</div>;
   }
 }
-````
+```
 
 ```jsx
 console.log(2);
