@@ -5,7 +5,9 @@ Prettier Markdown
 
 Prettier JavaScript code in markdown.
 
-![before](./snapshots/before.png)![after](./snapshots/after.png)
+#### before / after
+
+![compare](./snapshots/compare.png)
 
 ## Usage 
 
