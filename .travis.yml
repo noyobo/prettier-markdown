@@ -1,0 +1,12 @@
+language: node_js
+
+node_js:
+  - "node"
+
+notifications:
+  email:
+    on_success: never # default: change
+    on_failure: always # default: always
+
+after_script:
+  - npm run codecov
