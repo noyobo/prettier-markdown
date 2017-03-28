@@ -1,7 +1,7 @@
 {
   "name": "prettier-markdown",
   "version": "0.1.0",
-  "description": "",
+  "description": "Prettier JavaScript code in markdown.",
   "main": "lib/prettier-markdown.js",
   "bin": {
     "prettier-markdown": "./bin/cli.js",
@@ -30,5 +30,16 @@
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noyobo/prettier-markdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noyobo/prettier-markdown/issues"
+  },
+  "homepage": "https://github.com/noyobo/prettier-markdown#readme"
 }
