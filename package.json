@@ -10,7 +10,7 @@
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha",
     "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
-    "lint": "eslint ./lib ./bin"
+    "lint": "eslint ./lib ./bin ./test/*.js"
   },
   "keywords": [
     "prettier",

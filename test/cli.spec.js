@@ -9,27 +9,28 @@ const rimraf = require('rimraf');
 const pmd = require.resolve('../bin/cli.js');
 const read = fs.readFileSync;
 
-rimraf.sync(path.join(__dirname, './actual'));
-
 const expectedFiles = fs.readdirSync(path.join(__dirname, './expected'));
-describe('prettier markdown', function() {
-  before(function(done) {
-    const p = spawn(
-      'node',
-      [pmd].concat([
-        './test/fixtures/code.md',
-        '--output=./test/actual',
-        '--prefix=2'
-      ]),
-      {
-        stdio: 'inherit'
-      }
-    );
-    p.on('close', code => {
-      if (code) {
-        process.exit(code);
-      }
-      done();
+describe('prettier markdown cli', () => {
+  before((done) => {
+    rimraf(path.join(__dirname, './actual'), () => {
+      const p = spawn(
+        'node',
+        [pmd].concat([
+          './test/fixtures/code.md',
+          './test/fixtures/callback.md',
+          '--output=./test/actual',
+          '--prefix=2',
+        ]),
+        {
+          stdio: 'inherit',
+        },
+      );
+      p.on('close', (code) => {
+        if (code) {
+          process.exit(code);
+        }
+        done();
+      });
     });
   });
 
@@ -39,8 +40,8 @@ describe('prettier markdown', function() {
     assert.deepEqual(read(actualFile), read(expectedFile));
   }
 
-  expectedFiles.forEach(fixture => {
-    it(fixture, function() {
+  expectedFiles.forEach((fixture) => {
+    it(fixture, () => {
       test(fixture);
     });
   });
