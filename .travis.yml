@@ -19,3 +19,4 @@ after_script:
   - npm run codecov
   - npm link
   - pmd ./test/fixtures/code.md pmd ./test/fixtures/callback.md # work cli
+  - prettier-markdown ./test/fixtures/code.md pmd ./test/fixtures/callback.md # work cli
