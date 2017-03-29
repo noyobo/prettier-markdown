@@ -1,6 +1,6 @@
 {
   "name": "prettier-markdown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Prettier JavaScript code in markdown.",
   "main": "lib/prettier-markdown.js",
   "bin": {
