@@ -18,4 +18,4 @@ script:
 after_script:
   - npm run codecov
   - npm link
-  - pmd ./test/fixtures/**/*.md # work cli
+  - pmd ./test/fixtures/code.md pmd ./test/fixtures/callback.md # work cli
