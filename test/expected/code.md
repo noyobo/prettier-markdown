@@ -1,13 +1,13 @@
 # prettier markdown
 
 ```jsx
-import React, { Component, PropTypes } from "react";
+import React, { Component, PropTypes } from 'react';
 
 export default class App extends Component {
-  static displayName = "App";
+  static displayName = 'App';
 
   static propTypes = {
-    name: PropTypes.string,
+    name: PropTypes.string
   };
 
   constructor(props) {

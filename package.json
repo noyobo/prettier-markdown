@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha",
-    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov"
+    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "lint": "eslint ./lib ./bin"
   },
   "keywords": [
     "prettier",
@@ -19,6 +20,7 @@
   "author": "noyobo <noyobo@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.1.2",
     "debug": "^2.6.3",
     "minimist": "^1.2.0",
     "output-file": "^1.1.1",
@@ -27,6 +29,9 @@
   },
   "devDependencies": {
     "codecov": "^2.1.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb-base": "^11.1.2",
+    "eslint-plugin-import": "^2.2.0",
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1"
