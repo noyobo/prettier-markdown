@@ -19,48 +19,52 @@ describe('prettier-markdown', () => {
         done();
       });
     });
+
     it('callback should be work', (done) => {
       prettierMatkdown(
-        path.join(__dirname, './fixtures/callback.md'), {
+        path.join(__dirname, './fixtures/callback.md'),
+        {
           cwd: __dirname,
           prefix: 2,
-          output: './actual/',
+          output: './actual/'
         },
         (err) => {
           assert.ok(err === null, 'prettier-markdown throw error');
           testFile('callback.md');
           done();
-        },
+        }
       );
     });
 
     it('output absolute path', (done) => {
       prettierMatkdown(
-        path.join(__dirname, './fixtures/callback.md'), {
+        path.join(__dirname, './fixtures/callback.md'),
+        {
           cwd: __dirname,
           prefix: 2,
-          output: path.join(__dirname, './actual/'),
+          output: path.join(__dirname, './actual/')
         },
         (err) => {
           assert.ok(err === null, 'prettier-markdown throw error');
           testFile('callback.md');
           done();
-        },
+        }
       );
     });
 
     it('skip file not exists', (done) => {
       prettierMatkdown(
-        path.join(__dirname, './fixtures/xx.md'), {
+        path.join(__dirname, './fixtures/xx.md'),
+        {
           cwd: __dirname,
           prefix: 2,
-          output: path.join(__dirname, './actual/'),
+          output: path.join(__dirname, './actual/')
         },
         (err, msg) => {
           assert.ok(err === null, 'prettier-markdown throw error');
           assert.equal(msg, 'Failed to read file.');
           done();
-        },
+        }
       );
     });
   });
@@ -72,14 +76,14 @@ describe('prettier-markdown', () => {
       });
     });
 
-
     it('skip file not exists', (done) => {
       const promise = prettierMatkdown(
-        path.join(__dirname, './fixtures/xx.md'), {
+        path.join(__dirname, './fixtures/xx.md'),
+        {
           cwd: __dirname,
           prefix: 2,
-          output: path.join(__dirname, './actual/'),
-        },
+          output: path.join(__dirname, './actual/')
+        }
       );
 
       promise.then((msg) => {

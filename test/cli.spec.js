@@ -19,12 +19,13 @@ describe('prettier markdown cli', () => {
           './test/fixtures/code.md',
           './test/fixtures/callback.md',
           '--output=./test/actual',
-          '--prefix=2',
+          '--prefix=2'
         ]),
         {
-          stdio: 'inherit',
-        },
+          stdio: 'inherit'
+        }
       );
+
       p.on('close', (code) => {
         if (code) {
           process.exit(code);
