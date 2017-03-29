@@ -17,3 +17,5 @@ script:
 
 after_script:
   - npm run codecov
+  - npm link
+  - pmd ./test/fixtures/**/*.md # work cli

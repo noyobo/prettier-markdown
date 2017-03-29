@@ -8,7 +8,7 @@ module.exports = {
   },
   "rules": {
     "strict": "off",
-    "comma-dangle": "off",
+    "comma-dangle": ["error", "never"],
     "no-console": "off",
     "no-param-reassign": "off",
     "no-cond-assign": "off"

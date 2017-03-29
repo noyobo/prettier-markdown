@@ -15,7 +15,7 @@ const files = argv._;
 const isMarkdown = R.compose(
   R.or(R.equals('.md'), R.equals('.markdown')),
   path.extname,
-  path.resolve,
+  path.resolve
 );
 const mdFiles = R.compose(R.map(path.resolve), R.filter(isMarkdown))(files);
 
