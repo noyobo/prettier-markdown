@@ -6,7 +6,7 @@ order: 5
 tipFormatter 示例
 
 ````jsx
-import { Range } from "@ali/ice";
+import { Range } from 'ice';
 
 class App extends React.Component {
     constructor(props) {
