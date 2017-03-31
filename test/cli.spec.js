@@ -18,6 +18,7 @@ describe('prettier markdown cli', () => {
         [pmd].concat([
           './test/fixtures/code.md',
           './test/fixtures/callback.md',
+          './test/fixtures/case1.md',
           '--output=./test/actual',
           '--prefix=2'
         ]),
@@ -38,7 +39,7 @@ describe('prettier markdown cli', () => {
   function test(fixture) {
     const expectedFile = path.resolve('./test/expected/', fixture);
     const actualFile = path.resolve('./test/actual/', fixture);
-    assert.deepEqual(read(actualFile), read(expectedFile));
+    assert.deepEqual(String(read(actualFile)), String(read(expectedFile)));
   }
 
   expectedFiles.forEach((fixture) => {
