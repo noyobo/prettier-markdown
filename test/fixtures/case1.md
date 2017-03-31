@@ -29,7 +29,7 @@ class App extends React.Component {
     }
 
     formatter(value) {
-        return "$" + value;
+        return '$' + value;
     }
     render() {
         return (
