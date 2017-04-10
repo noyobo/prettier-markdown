@@ -44,8 +44,13 @@ perttierMarkdown('./foo.md', function(err, msg) {
 });
 
 // promise
-const promise = perttierMarkdown('./foo.md', {/* options */});
-promise.then(msg => console.log)
+const promise = perttierMarkdown(
+  './foo.md',
+  {
+    /* options */
+  }
+);
+promise.then(msg => console.log);
 ```
 
 ## Options
