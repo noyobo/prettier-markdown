@@ -23,9 +23,9 @@
     "colors": "^1.1.2",
     "debug": "^2.6.3",
     "minimist": "^1.2.0",
-    "output-file": "^1.1.1",
-    "prettier": "^0.22.0",
-    "ramda": "^0.23.0"
+    "prettier": "^1.2.2",
+    "ramda": "^0.23.0",
+    "write": "^0.3.3"
   },
   "devDependencies": {
     "codecov": "^2.1.0",
