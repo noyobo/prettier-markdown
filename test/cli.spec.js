@@ -47,4 +47,30 @@ describe('prettier markdown cli', () => {
       test(fixture);
     });
   });
+
+  it('cli version', (done) => {
+    const p = spawn('node', [pmd].concat(['--version']), {
+      stdio: 'inherit'
+    });
+
+    p.on('close', (code) => {
+      if (code) {
+        process.exit(code);
+      }
+      done();
+    });
+  });
+
+  it('cli help', (done) => {
+    const p = spawn('node', [pmd].concat(['--help']), {
+      stdio: 'inherit'
+    });
+
+    p.on('close', (code) => {
+      if (code) {
+        process.exit(code);
+      }
+      done();
+    });
+  });
 });

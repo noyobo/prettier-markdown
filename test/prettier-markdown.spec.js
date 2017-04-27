@@ -1,8 +1,8 @@
-const prettierMatkdown = require('../lib/prettier-markdown');
-const path = require('path');
-const fs = require('fs');
 const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
 const rimraf = require('rimraf');
+const prettierMatkdown = require('../lib/prettier-markdown');
 
 const read = fs.readFileSync;
 
