@@ -34,17 +34,17 @@ pmd ./**/*.md
 
 If has `callback` argument, otherwise return a Promise object.
 
-`perttierMarkdown(markdownFile [,optoins] [, callback])`
+`prettierMarkdown(markdownFile [,options] [, callback])`
 
 ```js
-const perttierMarkdown = require('prettier-markdown');
+const prettierMarkdown = require('prettier-markdown');
 
-perttierMarkdown('./foo.md', function(err, msg) {
+prettierMarkdown('./foo.md', function(err, msg) {
   console.log(msg);
 });
 
 // promise
-const promise = perttierMarkdown(
+const promise = prettierMarkdown(
   './foo.md',
   {
     /* options */
