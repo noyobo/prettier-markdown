@@ -34,7 +34,7 @@ pmd ./**/*.md
 
 If has `callback` argument, otherwise return a Promise object.
 
-`prettierMarkdown(markdownFile [,optoins] [, callback])`
+`prettierMarkdown(markdownFile [,options] [, callback])`
 
 ```js
 const prettierMarkdown = require('prettier-markdown');
