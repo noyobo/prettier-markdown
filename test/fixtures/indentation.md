@@ -13,3 +13,15 @@
       ])
     });
     ```
+
+		```js
+		({
+		  some: Code.here([
+		    1,
+		    'string',
+		    new Date(),
+		    {},
+		    null
+		  ])
+		});
+		```
