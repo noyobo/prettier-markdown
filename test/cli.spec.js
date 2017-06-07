@@ -19,6 +19,7 @@ describe('prettier markdown cli', () => {
           './test/fixtures/code.md',
           './test/fixtures/callback.md',
           './test/fixtures/case1.md',
+          './test/fixtures/indentation.md',
           '--output=./test/actual',
           '--prefix=2'
         ]),
