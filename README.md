@@ -54,8 +54,3 @@ const promise = prettierMarkdown(
 );
 promise.then(msg => console.log);
 ```
-
-## Options
-
-TODO
-
