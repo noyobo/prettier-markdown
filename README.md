@@ -1,6 +1,8 @@
 Prettier Markdown
 =================
 
+# Deprecate！Please use own [prettier](https://github.com/prettier/prettier), already supports markdown. 2018-01-10
+
 [![](https://travis-ci.org/noyobo/prettier-markdown.svg?branch=master)](https://travis-ci.org/noyobo/prettier-markdown) [![Codecov](https://img.shields.io/codecov/c/github/noyobo/prettier-markdown/master.svg)](https://codecov.io/gh/noyobo/prettier-markdown/branch/master) [![npm package](https://img.shields.io/npm/v/prettier-markdown.svg)](https://www.npmjs.org/package/prettier-markdown) [![NPM downloads](http://img.shields.io/npm/dm/prettier-markdown.svg)](https://npmjs.org/package/prettier-markdown)
 
 [Prettier](https://github.com/prettier/prettier) JavaScript code in markdown.
